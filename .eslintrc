@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb", "eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": { "ecmaVersion": 2017 },
+  "env": { "es6": true, "browser": true },
+  "rules": {
+    "semi": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": ["function-declaration", "arrow-function"]
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/webpack.*.js"]
+      }
+    ]
+  }
+}
